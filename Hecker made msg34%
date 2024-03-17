@@ -171,12 +171,12 @@ function click()
 s = Instance.new("Sky")
 s.Name = "Sky"
 s.Parent = game.Lighting
-s.SkyboxBk = "http://www.roblox.com/asset/?id=16778065583"
-s.SkyboxDn = "http://www.roblox.com/asset/?id=16778065583"
-s.SkyboxFt = "http://www.roblox.com/asset/?id=16778065583"
-s.SkyboxLf = "http://www.roblox.com/asset/?id=16778065583"
-s.SkyboxRt = "http://www.roblox.com/asset/?id=16778065583"
-s.SkyboxUp = "http://www.roblox.com/asset/?id=16778065583"
+s.SkyboxBk = "http://www.roblox.com/asset/?id=16779258938"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=16779258938"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=16779258938"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=16779258938"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=16779258938"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=16779258938"
 game.Lighting.TimeOfDay = 12
 end
 script.Parent.MouseButton1Down:connect(click)
@@ -188,7 +188,7 @@ local script = Instance.new('Script', TextButton_2)
 function click()
 function exPro(root)
 for _, v in pairs(root:GetChildren()) do
-if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=158118263" then
+if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=16779258938" then
 v.Parent = nil
 elseif v:IsA("BasePart") then
 v.Material = "Plastic"
@@ -199,12 +199,12 @@ local Three = Instance.new("Decal", v)
 local Four = Instance.new("Decal", v)
 local Five = Instance.new("Decal", v)
 local Six = Instance.new("Decal", v)
-One.Texture = "http://www.roblox.com/asset/?id=16778065583"
-Two.Texture = "http://www.roblox.com/asset/?id=16778065583"
-Three.Texture = "http://www.roblox.com/asset/?id=16778065583"
-Four.Texture = "http://www.roblox.com/asset/?id=16778065583"
-Five.Texture = "http://www.roblox.com/asset/?id=16778065583"
-Six.Texture = "http://www.roblox.com/asset/?id=16778065583"
+One.Texture = "http://www.roblox.com/asset/?id=16779258938"
+Two.Texture = "http://www.roblox.com/asset/?id=16779258938"
+Three.Texture = "http://www.roblox.com/asset/?id=16779258938"
+Four.Texture = "http://www.roblox.com/asset/?id=16779258938"
+Five.Texture = "http://www.roblox.com/asset/?id=16779258938"
+Six.Texture = "http://www.roblox.com/asset/?id=16779258938"
 One.Face = "Front"
 Two.Face = "Back"
 Three.Face = "Right"
@@ -301,7 +301,7 @@ local function ACZY_fake_script() -- TextButton_7.Script
 local script = Instance.new('Script', TextButton_7)
 
 function click()
-basics = {Color3.new(225/225,0/225,0/225),Color3.new(225/225,0/225,0/255),Color3.new(225/225,225/225,0/225),Color3.new(0/225,0/225,0/225),Color3.new(0/225,0/225,225/225),Color3.new(0/225,0/225,225/225),Color3.new(170/255,0/255,255/255),Color3.new(0/255,204/255,204/255),Color3.new(255/255,85/255,127/255),Color3.new(0/255,0/255,0/255),Color3.new(255/255,255/255,255/255)}
+basics = {Color3.new(225/225,0/225,0/225),Color3.new(225/225,0/225,0/255),Color3.new(225/225,225/225,0/225),Color3.new(0/225,0/225,0/225),Color3.new(0/225,0/225,225/225),Color3.new(0/225,0/225,225/225),Color3.new(225/225,0/225,0/225),Color3.new(0/225,0/225,225/225),Color3.new(225/225,0/225,0/225),Color3.new(0/225,0/225,0/225),Color3.new(225/225,225/225,225/225)}
 game.Lighting.FogStart = 25
 game.Lighting.FogEnd = 300
 while true do
@@ -348,4 +348,27 @@ script.Parent.MouseButton1Down:connect(click)
 
 end
 coroutine.wrap(HFYFM_fake_script)()
+
+local TextButton = Instance.new("TextButton")
+TextButton.Size = UDim2.new(0.3, 0, 0.2, 0)
+TextButton.Position = UDim2.new(0.60, 0, 0.70, 0)
+TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 225, 0) -- Green
+TextButton.BorderSizePixel = 2
+TextButton.BackgroundTransparency = 0.66
+TextButton.Text = "Music"
+TextButton.TextSize = 23
+TextButton.TextWrapped = true
+TextButton.TextColor3 = Color3.new(0, 225, 0)
+TextButton.Font = Enum.Font.Code
+TextButton.Parent = Frame
+TextButton.MouseButton1Click:Connect(function()
+local tubers93= Instance.new("Sound")
+tubers93.Parent= game:GetService("Workspace")
+tubers93.SoundId= "rbxassetid://60180288320"
+tubers93.Playing= true
+tubers93.Looped= true
+tubers93.Pitch      = 1
+tubers93.Volume= 100000000000000000000000
+end)
 
